@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #fd7e14;
+  --hover-color: #cf711f;
+  --white-color: #f8f9fa;
+  --gray-text-color: #495057;
+  --gray-light-color: #dee2e6;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: var(--gray-light-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+.container {
+  max-width: 90rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* Card */
+.product {
+  max-width: 350px;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(110, 108, 108, 0.3);
+}
+
+.product-content {
+  position: relative;
+  background-color: var(--white-color);
+  padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+  border-radius: 17px 17px 0 0;
+  margin-top: -2.4rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.product-img {
+  display: block;
+  width: 100%;
+  z-index: -1;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* Tags */
+.product-tags {
+  margin: 0.8rem 0 1.3rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #343a40;
+  color: var(--gray-text-color);
+}
+
+.product-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1.3rem;
+  margin-top: 1.5rem;
+  color: var(--gray-text-color);
+}
+
+.product-price {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 1.2rem 4.7rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 9px;
+  font-weight: 600;
+  background-color: var(--main-color);
+  color: var(--white-color);
+
+  transition: background-color 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.price span:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-text-color);
+}
+
+.price span:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 500;
+}
